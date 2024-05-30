@@ -5,7 +5,7 @@ import img from './assests/fitness.png';
 const Footer = () => {
   // const { user } = useAuthContext();
   const [feedback, setFeedback] = useState({ name: '', email: '', text: '' });
-  const [submitted, setSubmitted] = useState(false);
+  // const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -18,7 +18,7 @@ const Footer = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(feedback); // Log the feedback data
-    setSubmitted(true);
+    // setSubmitted(true);
     setFeedback({ name: '', email: '', text: '' });
     alert('Thanks for your feedback!');
   };
